@@ -3,7 +3,7 @@ const productSchema = mongoose.Schema({
     name: { type: String, required: true },
     location: { type: String, required: true },
     description: { type: String, required: true },
-    postImage: {data: Buffer,contentType: String,},
+    photo: { type: String, require:true },
     likes: { type: Number },
     date: { type: Date }
 });
