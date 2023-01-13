@@ -16,7 +16,7 @@ const imgconfig = multer.diskStorage({
       callback(null, "./uploads")
     },
     filename: (req, file, callback) => {
-      callback(null, `imgae-${Date.now()}. ${file.originalname}`)
+      callback(null, `imgae-${Date.now()}.${file.originalname}`)
     }
   })
   
